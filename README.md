@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+## 1-1 react 개념
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+리액트는 사용자 인터페이스를 구축하기 위한 선언적이고 효율적이며 유연한 Javascript 라이브러리로 컴포넌트 기반의 화면을 구성할 수 있고 이를 통해 컴포넌트를 재사용하기 용이합니다. 또한 컴포넌트를 이용하여 복잡한 UI를 구성하고 유지보수를 하기에 적합합니다.
 
-## Available Scripts
+리액트는 Virtual Dom을 통해 이전 UI 상태를 메모리에 유지하여, 리얼 돔과 비교하여 달라진 부분만 찾아 화면을 바꿔줄 수 있어 빠른 속도로 화면을 그릴 수 있다는 장점이 있습니다.
 
-In the project directory, you can run:
+## 1-2. 상태 관리의 개념
 
-### `yarn start`
+상태란 웹 애플리케이션을 랜더하는데 있어 영향을 미칠 수 있는 값이라고 하며 이를 관리하는 것을 상태 관리라고 합니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 2. 아래 요구사항에 맞는 웹을 개발하시오.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+전반적인 상태 관리는 state와 props를 사용하였으며 요구하는 유저 시나리오 대부분 구현하였고 그 중 최신 입력순으로 나열하는 방법은 push 와 unshift 함수를 사용해보았지만 구현해 내지 못하였습니다.
 
-### `yarn test`
+- pages = Todo.js
+- components = TodoList.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 3. Rest API 활용
 
-### `yarn build`
+Rest API 활용으로 [POST] CREATE 를 사용하여 POST 요청을 구현하였습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- pages = RestApi.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 4. 추가 사항
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+매우 작은 스코프이지만 추가 사항으로 2번 문제인 Todo 페이지를 반응형 디자인 적용을 해보았습니다.
